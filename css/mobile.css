@@ -8,3 +8,4 @@
 .searchMenu input:focus {outline: none;}
 .searchMenu .menuBox {background-color: #3a8dfd;}
 .searchMenu .icon {width: 20%;}
+.searchMenu .icon p {font-size: 12px;}
