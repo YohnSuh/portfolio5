@@ -4,11 +4,11 @@
 .main .menuBox a span {font-size: 12px;}
 /* 금융상품, 검색 */
 .searchMenu form {overflow: hidden;border-color: #3a8dfd !important;}
-.searchMenu input {border: none;}
+.searchMenu input {border: none;font-size: 12px;}
 .searchMenu input:focus {outline: none;}
 .searchMenu .menuBox {background-color: #3a8dfd;}
 .searchMenu .icon {width: 20%;}
-.searchMenu .icon p {font-size: 12px;}
+.searchMenu .icon p {font-size: 10px;}
 
 /* 컨텐트 */
 
@@ -20,3 +20,11 @@
 .content h4 {color:#3A8DFD;}
 .content ul a span:first-child,
 .content .time {display: block;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+.content ul a span {font-size: 12px;}
+.content ul a:hover {color:#0082cd;}
+.content .imgWrap {overflow: hidden;}
+.content .service a img {transition: .2s;}
+.content .service a:hover {color: unset;}
+.content .service a:hover img {transform: scale(1.1);}
+.content .textWrap h5 {font-size: 12px;}
+.content .textWrap p {font-size: 8px;}
