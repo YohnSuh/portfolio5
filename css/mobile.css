@@ -1,4 +1,10 @@
+/* 메인 배너, 메뉴 */
 .main .bannerSlide img {width: 100%;}
-.main .menuBox .item {position: relative; width: 100%;padding-bottom: 100%;background: linear-gradient(135deg, #3a8dfd, #0082cd);}
+.main .menuBox .item {position: relative; width: 100%; padding-bottom: 100%; background: linear-gradient(135deg, #3a8dfd, #0082cd);}
 
-.banner {background-color: bisque;}
+/* 빠른 메뉴 */
+.searchMenu form {overflow: hidden;border-color: #3a8dfd !important;}
+.searchMenu input {border: none;}
+.searchMenu input:focus {outline: none;}
+.searchMenu .menuBox {background-color: #3a8dfd;}
+.searchMenu .icon {width: 20%;}
