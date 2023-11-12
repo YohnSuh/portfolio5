@@ -1,11 +1,22 @@
 /* 메인 배너, 메뉴 */
 .main .bannerSlide img {width: 100%;}
 .main .menuBox .item {position: relative; width: 100%; padding-bottom: 100%; background: linear-gradient(135deg, #3a8dfd, #0082cd);}
-
-/* 빠른 메뉴 */
+.main .menuBox a span {font-size: 12px;}
+/* 금융상품, 검색 */
 .searchMenu form {overflow: hidden;border-color: #3a8dfd !important;}
 .searchMenu input {border: none;}
 .searchMenu input:focus {outline: none;}
 .searchMenu .menuBox {background-color: #3a8dfd;}
 .searchMenu .icon {width: 20%;}
 .searchMenu .icon p {font-size: 12px;}
+
+/* 컨텐트 */
+
+/* 빠른 메뉴 */
+.content .item {width: 30%; padding-bottom:20%; background-color:  #f0f0f0; border: 1px solid #f0f0f0;}
+.content .item:hover {border: 1px solid #3A8DFD; background-color: #E9F2FF;}
+.content .item:hover span {color:#3a8dfd;}
+.content .item span {font-size: 12px;} 
+.content h4 {color:#3A8DFD;}
+.content ul a span:first-child,
+.content .time {display: block;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}

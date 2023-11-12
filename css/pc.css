@@ -1,3 +1,11 @@
 @media all and (min-width: 1440px) {
     .container {max-width: 1440px;}
+    .main .menuBox a span {font-size: 28px;}
+
+    /* 금융상품, 검색 */
+    .searchMenu .icon .h-25 {height: 50% !important;}
+    .searchMenu .icon p {font-size: 16px;}
+
+    /* 콘텐트 */
+    .content .item span {font-size: 16px;}
 }
