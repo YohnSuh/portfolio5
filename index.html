@@ -17,12 +17,108 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
     <script src="js/swiper.js" defer></script>
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header></header>
-    <section class="main container">
-        <div class="row">
-            <div class="col-12 col-lg-8 p-lg-0 pe-lg-3">
+    <header class="position-fixed border-bottom w-100 bg-white">
+        <div class="logoWrap container pt-3 pb-3 pb-lg-0">
+            <div class="row">
+                <div>
+                    <ul class="submenu d-none d-lg-flex justify-content-end">
+                        <li class="fw-bold"><a href="#">전체상품</a></li>
+                        <li class="fw-bold"><a href="#">마이데이터</a></li>
+                        <li class="fw-bold"><a href="#">제휴제안</a></li>
+                        <li class="fw-bold">
+                            <div class="global position-relative">
+                                <i class="fa-solid fa-globe"></i>
+                                <div class="lang d-none position-absolute top-100 start-50 translate-middle-x bg-white border border-1 text-center">
+                                    <a href="#"><p class="ps-5 pe-5 pt-3">English</p></a>
+                                    <a href="#"><p class="ps-5 pe-5">Chinese</p></a>
+                                    <a href="#"><p class="ps-5 pe-5">Japanese</p></a>
+                                    <a href="#"><p class="ps-5 pe-5">Filipino</p></a>
+                                    <a href="#"><p class="ps-5 pe-5">Vietnamese</p></a>
+                                    <a href="#"><p class="ps-5 pe-5">Mongolian</p></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <a href="#" class="pb-lg-3"><h2><img src="images/logo.png"></h2></a>
+                    <ul class="gnb d-lg-flex justify-content-between ps-0 mb-0 col-6">
+                        <li class="fw-bold fs-5 position-relative col-3 text-center pb-4">개인
+                            <ul class="d-none position-absolute ps-0 pb-2 w-100 mt-4 bg-white border-top border-5 shadow-sm">
+                                <li><a href="#">조회</a></li>
+                                <li><a href="#">이체</a></li>
+                                <li><a href="#">오픈뱅킹</a></li>
+                                <li><a href="#">공과금</a></li>
+                                <li><a href="#">예금/신탁</a></li>
+                                <li><a href="#">펀드</a></li>
+                                <li><a href="#">보험</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">외환/골드</a></li>
+                                <li><a href="#">퇴직연금</a></li>
+                                <li><a href="#">뱅킹관리</a></li>
+                                <li><a href="#">ISA</a></li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold fs-5 position-relative col-3 text-center pb-4">기업
+                            <ul class="d-none position-absolute ps-0 pb-2 w-100 mt-4 bg-white border-top border-5 shadow-sm">
+                                <li><a href="#"></a></li>
+                                <li><a href="#">조회</a></li>
+                                <li><a href="#">이체</a></li>
+                                <li><a href="#">공과금</a></li>
+                                <li><a href="#">전자결제</a></li>
+                                <li><a href="#">수표어음</a></li>
+                                <li><a href="#">자금관리</a></li>
+                                <li><a href="#">예금/신탁</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">펀드/보험</a></li>
+                                <li><a href="#">외환</a></li>
+                                <li><a href="#">퇴직연금</a></li>
+                                <li><a href="#">뱅킹관리</a></li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold fs-5 position-relative col-3 text-center pb-4">자산 관리
+                            <ul class="d-none position-absolute ps-0 pb-2 w-100 mt-4 bg-white border-top border-5 shadow-sm">
+                                <li><a href="#">MY자산 진단</a></li>
+                                <li><a href="#">펀드 포트폴리오</a></li>
+                                <li><a href="#">퇴직연금 포트폴리오</a></li>
+                                <li><a href="#">WON챌린지</a></li>
+                                <li><a href="#">미래설계</a></li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold fs-5 position-relative col-3 text-center pb-4">금융 상품
+                            <ul class="d-none position-absolute ps-0 pb-2 w-100 mt-4 bg-white border-top border-5 shadow-sm">
+                                <li><a href="#">추천상품</a></li>
+                                <li><a href="#">예금</a></li>
+                                <li><a href="#">카드</a></li>
+                                <li><a href="#">펀드</a></li>
+                                <li><a href="#">대출</a></li>
+                                <li><a href="#">외환</a></li>
+                                <li><a href="#">골드</a></li>
+                                <li><a href="#">신탁</a></li>
+                                <li><a href="#">보험</a></li>
+                                <li><a href="#">퇴직연금</a></li>
+                                <li><a href="#">ISA</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <div class="myPage d-none d-lg-flex mb-3">
+                        <a class="login pt-2 ps-4 pe-4 pb-2 rounded-2 fw-bold me-2" href="#">로그인</a>
+                        <a class="center pt-2 ps-4 pe-4 pb-2 rounded-2 fw-bold" href="#">인증센터</a>
+                    </div>
+                    <div class="hamburger d-lg-none"><i class="fa-solid fa-bars fs-3"></i></div>
+                </div>
+            </div>  
+        </div><!--logoWrap-->
+    </header>
+    <section class="main container pt-5">
+        <div class="row pt-lg-5 mt-lg-5">
+            <div class="col-12 col-lg-8 pt-5 p-lg-0 pe-lg-3">
                 <div class="swiper bannerSlide m-1 m-lg-0 rounded-4 h-lg-100">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide banner1">

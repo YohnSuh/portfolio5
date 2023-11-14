@@ -1,3 +1,21 @@
+/* header */
+header {z-index: 999;}
+header ul li {cursor: pointer;}
+header .submenu li {font-size: 14px;color:#464646;}
+header .submenu li:hover a {color:#3A8DFD;}
+header .submenu li:hover i {color:#3A8DFD;}
+header .submenu li::after {content:'|';padding-left: 8px;padding-right: 8px;}
+header .submenu li:last-child::after {content: none;}
+header .global .lang a p {color:#464646;}
+header .global .lang a:hover p {color:#3a8dfd;}
+header .global:hover > div {display: block !important;}
+header .myPage .login {background-color: #3A8DFD; color: white;}
+header .myPage .center {background-color: #E9F2FF; color: #3A8DFD;}
+header .gnb {display: none;}
+header .gnb.active {display: block;}
+header .gnb > li:hover > ul {display: block !important;}
+header .gnb ul {border-color: #3A8DFD !important;}
+header .gnb a {font-size: 14px;}
 /* 메인 배너, 메뉴 */
 .main .bannerSlide img {width: 100%;}
 .main .menuBox .item {position: relative; width: 100%; padding-bottom: 100%; background: linear-gradient(135deg, #3a8dfd, #0082cd);}

@@ -1,3 +1,4 @@
 let banner = new Swiper('.bannerSlide', {
-    loop : true
+    loop : true,
+    autoplay: true
 });
