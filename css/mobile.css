@@ -1,5 +1,5 @@
 /* header */
-header {z-index: 999;}
+header {z-index: 999; height: 70px;}
 header ul li {cursor: pointer;}
 header .submenu li {font-size: 14px;color:#464646;}
 header .submenu li:hover a {color:#3A8DFD;}
@@ -11,15 +11,49 @@ header .global .lang a:hover p {color:#3a8dfd;}
 header .global:hover > div {display: block !important;}
 header .myPage .login {background-color: #3A8DFD; color: white;}
 header .myPage .center {background-color: #E9F2FF; color: #3A8DFD;}
+header .logo img {width: 80px;}
 header .gnb {display: none;}
-header .gnb.active {display: block;}
-header .gnb > li:hover > ul {display: block !important;}
-header .gnb ul {border-color: #3A8DFD !important;}
+header .gnb.active {display: block; position: fixed; z-index: 999;top: 70px; left: 0; background-color: white;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
+header .gnb > li span {font-size: 16px;}
+header .gnb > li:hover span {color:#0082cd; background-color: #E9F2FF;}
+header .gnb ul {display:none;}
+header .gnb > li:hover > ul {display: block;}
 header .gnb a {font-size: 14px;}
+header .gnb .m-my a {font-size: 12px;color:#464646;}
+header .gnb .m-my a:hover span {color: #3A8DFD;}
+header .gnb .m-my a::after {content:'|';padding-left: 10px; padding-right: 10px;}
+header .gnb .m-my a:last-child::after {content: none;}
+header .hamburger {cursor: pointer;}
+header .hamburger::after {content: '';display:none; position: fixed; z-index:1;top: 70px;left: 0;width: 100%;height: 100%;background-color:#E9F2FF; cursor: pointer;}
+header .gnb.active ~ .hamburger::after {display: block;}
+header .hamburger .fa-xmark {display: none;}
+header .gnb.active ~ .hamburger .fa-xmark {display: block;}
+header .gnb.active ~ .hamburger .fa-bars {display: none;}
+header .gnb {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+header .gnb > li ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #E9F2FF;/* 배경색 스크롤 태블릿에서 없애기*/
+    overflow-y: scroll;
+}
+header .gnb > li:nth-child(2) ul {top:-56px;}
+header .gnb > li:nth-child(3) ul {top:-112px;}
+header .gnb > li:nth-child(4) ul {top:-168px;}
+
 /* 메인 배너, 메뉴 */
-.main .bannerSlide img {width: 100%;}
+.main .bannerSlide img {max-width: 100%;}
 .main .menuBox .item {position: relative; width: 100%; padding-bottom: 100%; background: linear-gradient(135deg, #3a8dfd, #0082cd);}
 .main .menuBox a span {font-size: 12px;}
+.main .item i {position: absolute;bottom:40px; right: 40px; font-size: 80px;}
+
 /* 금융상품, 검색 */
 .searchMenu form {overflow: hidden;border-color: #3a8dfd !important;}
 .searchMenu input {border: none;font-size: 12px;}
@@ -28,10 +62,8 @@ header .gnb a {font-size: 14px;}
 .searchMenu .icon {width: 20%;}
 .searchMenu .icon p {font-size: 10px;}
 
-/* 컨텐트 */
-
 /* 빠른 메뉴 */
-.content .item {width: 30%; padding-bottom:20%; background-color:  #f0f0f0; border: 1px solid #f0f0f0;}
+.content .item {width: 30%; padding-bottom:20%; background-color:  #f0f0f0; border: 1px solid #f0f0f0;cursor: pointer;}
 .content .item:hover {border: 1px solid #3A8DFD; background-color: #E9F2FF;}
 .content .item:hover span {color:#3a8dfd;}
 .content .item span {font-size: 12px;} 
