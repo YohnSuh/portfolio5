@@ -8,7 +8,7 @@
     header .gnb > li {padding: 5px 0 30px;}
     header .gnb > li span {font-size: 18px;}
     header .gnb > li:hover span {background-color: unset;}
-    header .gnb > li ul {position: absolute; top: 60px; left:0;  border-top: 5px solid #3A8DFD;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
+    header .gnb > li ul {position: absolute; top: 60px; left:0; height: auto;background-color: white; overflow: visible; border-top: 5px solid #3A8DFD;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
     header .gnb > li:nth-child(1) ul {display: none;}
     header .gnb > li:nth-child(1):hover ul {display: block;}
     header .gnb > li:nth-child(2) ul {top: 60px;}

@@ -41,9 +41,12 @@ header .gnb > li ul {
     left: 100%;
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: #E9F2FF;/* 배경색 스크롤 태블릿에서 없애기*/
+    background-color: #E9F2FF;
     overflow-y: scroll;
 }
+header .gnb > li ul::-webkit-scrollbar {width:10px;}
+header .gnb > li ul::-webkit-scrollbar-thumb {background-color: #3A8DFD; border-radius: 5px;}
+header .gnb > li ul::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, .1);}
 header .gnb > li:nth-child(2) ul {top:-56px;}
 header .gnb > li:nth-child(3) ul {top:-112px;}
 header .gnb > li:nth-child(4) ul {top:-168px;}
