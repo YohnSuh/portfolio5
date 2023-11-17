@@ -15,7 +15,7 @@ header .logo img {width: 80px;}
 header .gnb {display: none;}
 header .gnb.active {display: block; position: fixed; z-index: 999;top: 70px; left: 0; background-color: white;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
 header .gnb > li span {font-size: 16px;}
-header .gnb > li:hover span {color:#0082cd; background-color: #E9F2FF;}
+header .gnb > li:hover span {color:#3A8DFD; background-color: #E9F2FF;}
 header .gnb ul {display:none;}
 header .gnb > li:hover > ul {display: block;}
 header .gnb a {font-size: 14px;}
@@ -37,19 +37,20 @@ header .gnb {
 }
 header .gnb > li ul {
     position: absolute;
-    top: 0;
     left: 100%;
     width: 100%;
     height: calc(100vh - 70px);
     background-color: #E9F2FF;
     overflow-y: scroll;
 }
-header .gnb > li ul::-webkit-scrollbar {width:10px;}
+header .gnb > .aa {width: 100%;height:100px;background-color: rgba(0, 0, 0, .1);}
+header .gnb > li ul::-webkit-scrollbar {width:5px;}
 header .gnb > li ul::-webkit-scrollbar-thumb {background-color: #3A8DFD; border-radius: 5px;}
 header .gnb > li ul::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, .1);}
-header .gnb > li:nth-child(2) ul {top:-56px;}
-header .gnb > li:nth-child(3) ul {top:-112px;}
-header .gnb > li:nth-child(4) ul {top:-168px;}
+header .gnb > li:nth-child(2) ul {top: -100px;}
+header .gnb > li:nth-child(3) ul {top:-156px;}
+header .gnb > li:nth-child(4) ul {top:-212px;}
+header .gnb > li:nth-child(5) ul {top:-268px;}
 
 /* 메인 배너, 메뉴 */
 .main .bannerSlide img {max-width: 100%;}
