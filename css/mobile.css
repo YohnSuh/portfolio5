@@ -19,7 +19,7 @@ header .gnb > li:hover ul span {color:#3A8DFD; background-color: #E9F2FF;}
 header .gnb ul {display:none;}
 header .gnb > li:hover > ul {display: block;}
 header .gnb ul a {font-size: 14px;}
-header .hamburger {cursor: pointer;}
+header .hamburger {color:#3A8DFD;cursor: pointer;}
 header .hamburger::after {content: '';display:none; position: fixed; z-index:1;top: 70px;left: 0;width: 100%;height: 100%;background-color:#E9F2FF; cursor: pointer;}
 header .gnb.active ~ .hamburger::after {display: block;}
 header .hamburger .fa-xmark {display: none;}

@@ -14,11 +14,13 @@
     header .gnb > li:nth-child(2) ul {top: 60px;}
     header .gnb > li:nth-child(3) ul {top: 60px;}
     header .gnb > li:nth-child(4) ul {top: 60px;}
+    header .gnb > li:nth-child(5) ul {top: 60px;}
     header .gnb ul li:hover {background-color: #E9F2FF;}
     header .gnb ul li:hover a {color: #3A8DFD;}
     header .myPage > div > a {color: #3A8DFD;}
     header .myPage > div span a {border-bottom: 1px solid black;}
     header .myPage > div span a:hover {color:#3A8DFD; border-color: #3A8DFD;}
+    header .myPage > div .logout {font-size: 14px; padding:5px 10px; background-color: #E9F2FF;}
     /* 슬라이드 이미지 */
     .main .bannerSlide img {display: none;}
     .main .banner1 {background: url('../images/banner1.png') no-repeat center / cover;}
