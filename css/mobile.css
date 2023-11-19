@@ -15,9 +15,10 @@ header .logo img {width: 80px;}
 header .gnb {display: none;width: 50%;height: 100%;box-sizing: border-box;position: relative;}
 header .gnb.active {display: block; position: fixed; z-index: 999;top: 70px; left: 0; background-color: white;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
 header .gnb > li span {font-size: 16px;}
-header .gnb > li:hover ul span {color:#3A8DFD; background-color: #E9F2FF;}
+header .gnb > li:not(.m-info):hover span {color:#3A8DFD !important; background-color: #E9F2FF;}
 header .gnb ul {display:none;}
 header .gnb > li:hover > ul {display: block;}
+header .gnb > li > ul > li:hover {color: #3A8DFD;}
 header .gnb ul a {font-size: 14px;}
 header .hamburger {color:#3A8DFD;cursor: pointer;}
 header .hamburger::after {content: '';display:none; position: fixed; z-index:1;top: 70px;left: 0;width: 100%;height: 100%;background-color:#E9F2FF; cursor: pointer;}
@@ -25,10 +26,10 @@ header .gnb.active ~ .hamburger::after {display: block;}
 header .hamburger .fa-xmark {display: none;}
 header .gnb.active ~ .hamburger .fa-xmark {display: block;}
 header .gnb.active ~ .hamburger .fa-bars {display: none;}
-header .gnb > .m-info {width: 100%;height:150px;background-color: #3A8DFD;cursor: unset;}
+header .gnb > .m-info {width: 200%;height:150px;background-color: #3A8DFD;cursor: unset;}
 header .gnb > .m-info .log {color: white;background-color:rgba(255, 255, 255, .1);}
 header .gnb > .m-info .log a {border-bottom: 1px solid white;}
-header .gnb > .m-info .m-my a span {font-size: 12px; color:white;}
+header .gnb > .m-info .m-my a span {font-size: 10px; color:white;}
 header .gnb > .m-info .m-my a span::after {content:'|';padding-left: 10px; padding-right: 10px;}
 header .gnb > .m-info .m-my a:last-child span::after {content: none;}
 header .gnb > .m-info form input {padding: 5px 15px;border:0;font-size: 12px;box-sizing:border-box;}
@@ -40,17 +41,17 @@ header .gnb > li ul {
     position: absolute;
     left: 100%;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 220px);
     background-color: #E9F2FF;
     overflow-y: scroll;
 }
 header .gnb > li ul::-webkit-scrollbar {width:5px;}
 header .gnb > li ul::-webkit-scrollbar-thumb {background-color: #3A8DFD; border-radius: 5px;}
 header .gnb > li ul::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, .1);}
-header .gnb > li:nth-child(2) ul {top: -150px;}
-header .gnb > li:nth-child(3) ul {top: -206px;}
-header .gnb > li:nth-child(4) ul {top:-262px;}
-header .gnb > li:nth-child(5) ul {top:-318px;}
+header .gnb > li:nth-child(2) ul {top: 0px;}
+header .gnb > li:nth-child(3) ul {top: -56px;}
+header .gnb > li:nth-child(4) ul {top:-112px;}
+header .gnb > li:nth-child(5) ul {top:-168px;}
 
 /* 메인 배너, 메뉴 */
 .main .bannerSlide img {max-width: 100%;}
