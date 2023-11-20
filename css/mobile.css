@@ -60,9 +60,10 @@ header .gnb > li:nth-child(5) ul {top:-168px;}
 .main .item i {position: absolute;bottom:40px; right: 40px; font-size: 80px;}
 
 /* 금융상품, 검색 */
-.searchMenu form {overflow: hidden;border-color: #3a8dfd !important;}
+.searchMenu form {position: relative;;overflow: hidden;border-color: #3a8dfd !important;}
 .searchMenu input {border: none;font-size: 12px;}
 .searchMenu input:focus {outline: none;}
+.searchMenu button {position: absolute;top:5px;right: 15px; color: #3A8DFD;border: 0; background-color: unset;}
 .searchMenu .menuBox {background-color: #3a8dfd;}
 .searchMenu .icon {width: 20%;}
 .searchMenu .icon p {font-size: 10px;}
@@ -86,6 +87,7 @@ header .gnb > li:nth-child(5) ul {top:-168px;}
 
 /* footer */
 footer {background-color: #E9F2FF;}
+footer h2 img {width: 100px;}
 footer .f-icon li {width: 30px;height:30px;line-height:30px; border-radius: 100%;border:  1px solid #3A8DFD;color: #3A8DFD;}
 footer .item > div {display: none;}
 footer .item h3 {font-size: 12px;font-weight: bold;}
@@ -93,3 +95,9 @@ footer .item h3.toggle i {transform: rotate(180deg);transition: .2s;}
 footer .content h4 {display: inline-block;padding: 5px 8px;font-size: 10px;font-weight: bold;color: white;background-color: #3A8DFD;}
 footer .content li {font-size: 10px;}
 footer .content a:hover {color:#3A8DFD;}
+footer .gnb {width: 90%;margin: 0 auto;padding-top: 20px;border-top: 1px solid rgba(0, 0, 0, .2);}
+footer .gnb p {font-size: 10px;color: rgba(0, 0, 0, .5);}
+footer form {width:90%;height: 100px;text-align: center;margin: 0 auto;}
+footer form input {position:absolute;left:0;width: 100%; padding: 5px 10px;border: 0;}
+footer form input:focus {outline: none;}
+footer form button {position: absolute; top:0;right:0;height: 34px;padding:0 30px;color: white;border: 0;background-color: #3A8DFD;}
