@@ -15,7 +15,7 @@ header .logo img {width: 80px;}
 header .gnb {display: none;width: 50%;height: 100%;box-sizing: border-box;position: relative;}
 header .gnb.active {display: block; position: fixed; z-index: 999;top: 70px; left: 0; background-color: white;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
 header .gnb > li span {font-size: 16px;}
-header .gnb > li:not(.m-info):hover span {color:#3A8DFD !important; background-color: #E9F2FF;}
+header .gnb > li:not(.m-info):hover span {color:#3A8DFD; background-color: #E9F2FF;}
 header .gnb ul {display:none;}
 header .gnb > li:hover > ul {display: block;}
 header .gnb > li > ul > li:hover {color: #3A8DFD;}
@@ -28,7 +28,6 @@ header .gnb.active ~ .hamburger .fa-xmark {display: block;}
 header .gnb.active ~ .hamburger .fa-bars {display: none;}
 header .gnb > .m-info {width: 200%;height:150px;background-color: #3A8DFD;cursor: unset;}
 header .gnb > .m-info .log {color: white;background-color:rgba(255, 255, 255, .1);}
-header .gnb > .m-info .log a {border-bottom: 1px solid white;}
 header .gnb > .m-info .m-my a span {font-size: 10px; color:white;}
 header .gnb > .m-info .m-my a span::after {content:'|';padding-left: 10px; padding-right: 10px;}
 header .gnb > .m-info .m-my a:last-child span::after {content: none;}
@@ -36,15 +35,7 @@ header .gnb > .m-info form input {padding: 5px 15px;border:0;font-size: 12px;box
 header .gnb > .m-info form input::placeholder {font-size: 12px;}
 header .gnb > .m-info form input:focus {outline: none;}
 header .gnb > .m-info form button {right: 15px;color:#3A8DFD;background-color: unset;border: 0;}
-
-header .gnb > li ul {
-    position: absolute;
-    left: 100%;
-    width: 100%;
-    height: calc(100vh - 220px);
-    background-color: #E9F2FF;
-    overflow-y: scroll;
-}
+header .gnb > li ul {position: absolute; left: 100%; width: 100%; height: calc(100vh - 220px); background-color: #E9F2FF; overflow-y: scroll;}
 header .gnb > li ul::-webkit-scrollbar {width:5px;}
 header .gnb > li ul::-webkit-scrollbar-thumb {background-color: #3A8DFD; border-radius: 5px;}
 header .gnb > li ul::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, .1);}
@@ -69,21 +60,27 @@ header .gnb > li:nth-child(5) ul {top:-168px;}
 .searchMenu .icon p {font-size: 10px;}
 
 /* 빠른 메뉴 */
-.content .item {width: 30%; padding-bottom:20%; background-color:  #f0f0f0; border: 1px solid #f0f0f0;cursor: pointer;}
-.content .item:hover {border: 1px solid #3A8DFD; background-color: #E9F2FF;}
+/* .content .item {width: 30%; padding-bottom:20%; background-color:  #f0f0f0; border: 1px solid #f0f0f0;cursor: pointer;} */
+.content .item {width: 30%; padding-bottom:20%; background-color:  #E9F2FF; border: 1px solid #E9F2FF;cursor: pointer;}
+.content .item:hover {border: 1px solid #3A8DFD; }
 .content .item:hover span {color:#3a8dfd;}
 .content .item span {font-size: 12px;} 
-.content h4 {color:#3A8DFD;}
+.content h4 {color:#3A8DFD;display: flex;justify-content: space-between;align-items: end;}
+.content h4 .more {font-size: 12px;}
 .content ul a span:first-child,
 .content .time {display: block;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
-.content ul a span {font-size: 12px;}
+.content ul a span {font-size: 12px; line-height: 20px;}
+.content .badge {display: inline !important;padding: 3px 12px;font-size: 10px;border-radius: 50px;margin-right: 5px;}
+.content .career {background-color: #f5cd6f;color:#6d3a00;}
+.content .notice {background-color: #ffc3c9;color:#8c161f;}
+.content .news > div, .content .event > div {border: 2px solid #E9F2FF;box-sizing: border-box;}
 .content ul a:hover {color:#0082cd;}
 .content .imgWrap {overflow: hidden;}
 .content .service a img {transition: .2s;}
 .content .service a:hover {color: unset;}
 .content .service a:hover img {transform: scale(1.1);}
 .content .textWrap h5 {font-size: 12px;}
-.content .textWrap p {font-size: 10px;}
+.content .textWrap p {font-size: 10px;font-weight: bold;}
 
 /* footer */
 footer {background-color: #E9F2FF;}
@@ -101,4 +98,4 @@ footer form {width:90%;height: 100px;text-align: center;margin: 0 auto;}
 footer form input {position:absolute;left:0;width: 100%; padding: 5px 10px;border: 0;}
 footer form input:focus {outline: none;}
 footer form button {position: absolute; top:0;right:0;height: 34px;padding:0 30px;color: white;border: 0;background-color: #3A8DFD;}
-footer .copyright {background-color: #3A8DFD;font-size: 12px;}
+footer .copyright {background-color: #3A8DFD;font-size: 12px;color:#E9F2FF}

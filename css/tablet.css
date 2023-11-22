@@ -6,21 +6,22 @@
     header .gnb.active {position: relative; top: unset; left: unset;box-shadow: none;}
     header .gnb.active::after {display: none;}
     header .gnb > li {padding: 5px 0 30px;}
-    header .gnb > li span {font-size: 18px;}
-    header .gnb > li:hover span {background-color: unset;}
+    header .gnb > li span {font-size: 16px;margin-top: 15px;}
+    header .gnb > li:hover span {background-color: transparent !important;}
     header .gnb > li ul {position: absolute; top: 60px; left:0; height: auto;background-color: white; overflow: visible; border-top: 5px solid #3A8DFD;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);}
     header .gnb > li:nth-child(1) ul {display: none;}
     header .gnb > li:nth-child(1):hover ul {display: block;}
-    header .gnb > li:nth-child(2) ul {top: 60px;}
-    header .gnb > li:nth-child(3) ul {top: 60px;}
-    header .gnb > li:nth-child(4) ul {top: 60px;}
-    header .gnb > li:nth-child(5) ul {top: 60px;}
+    header .gnb > li:nth-child(2) ul {top: 72px;}
+    header .gnb > li:nth-child(3) ul {top: 72px;}
+    header .gnb > li:nth-child(4) ul {top: 72px;}
+    header .gnb > li:nth-child(5) ul {top: 72px;}
     header .gnb ul li:hover {background-color: #E9F2FF;}
     header .gnb ul li:hover a {color: #3A8DFD;}
+    header .myPage {margin-top: 15px;}
+    header .myPage > div {font-size: 14px;}
     header .myPage > div > a {color: #3A8DFD;}
-    header .myPage > div span a {border-bottom: 1px solid black;}
-    header .myPage > div span a:hover {color:#3A8DFD; border-color: #3A8DFD;}
-    header .myPage > div .logout {font-size: 14px; padding:5px 10px; background-color: #E9F2FF;}
+    header .myPage > div span a {color:#3A8DFD;}
+    header .myPage > div .logout {font-size: 12px; padding:5px 10px; background-color: #E9F2FF;}
     /* 슬라이드 이미지 */
     .main .bannerSlide img {display: none;}
     .main .banner1 {background: url('../images/banner1.png') no-repeat center / cover;}
@@ -32,6 +33,7 @@
 
     /* 금융상품, 검색 */
     .searchMenu input {font-size: 16px;}
+    .searchMenu button {top:10px;right: 25px;font-size: 20px;}
     .searchMenu .icon {width: unset;}
     .searchMenu .icon .h-25 {height: 35% !important;}
     .searchMenu .icon p {font-size: 14px;}
@@ -40,7 +42,9 @@
     .content .item {width: 16.67%; padding-bottom:10%;}
     .content .item span {font-size: 14px;}
     .content .line {width: 2px; background-color: #E9F2FF;}
-    .content ul a span {font-size: 16px;}
+    .content h4 .more {font-size: 14px;}
+    .content ul a > span {font-size: 16px;line-height: 30px;}
+    .content .badge {font-size: 14px;padding: 5px 18px;}
     .content .textWrap h5 {font-size: 20px;}
     .content .textWrap p {font-size: 16px;}
 
