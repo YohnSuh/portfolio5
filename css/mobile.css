@@ -60,7 +60,6 @@ header .gnb > li:nth-child(5) ul {top:-168px;}
 .searchMenu .icon p {font-size: 10px;}
 
 /* 빠른 메뉴 */
-/* .content .item {width: 30%; padding-bottom:20%; background-color:  #f0f0f0; border: 1px solid #f0f0f0;cursor: pointer;} */
 .content .item {width: 30%; padding-bottom:20%; background-color:  #E9F2FF; border: 1px solid #E9F2FF;cursor: pointer;}
 .content .item:hover {border: 1px solid #3A8DFD; }
 .content .item:hover span {color:#3a8dfd;}
@@ -74,11 +73,13 @@ header .gnb > li:nth-child(5) ul {top:-168px;}
 .content .career {background-color: #f5cd6f;color:#6d3a00;}
 .content .notice {background-color: #ffc3c9;color:#8c161f;}
 .content .news > div, .content .event > div {border: 2px solid #E9F2FF;box-sizing: border-box;}
-.content ul a:hover {color:#0082cd;}
+.content ul a:hover {color:#3A8DFD;}
 .content .imgWrap {overflow: hidden;}
 .content .service a img {transition: .2s;}
 .content .service a:hover {color: unset;}
 .content .service a:hover img {transform: scale(1.1);}
+.content .service .swiper-scrollbar-horizontal {background-color: #E9F2FF;}
+.content .service .swiper-scrollbar-drag {background-color: #3A8DFD;}
 .content .textWrap h5 {font-size: 12px;}
 .content .textWrap p {font-size: 10px;font-weight: bold;}
 
